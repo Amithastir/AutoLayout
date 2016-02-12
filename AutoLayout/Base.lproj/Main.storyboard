@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-cL-wXi">
+                                <rect key="frame" x="20" y="28" width="57" height="30"/>
+                                <state key="normal" title="Top Left"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVD-q7-9mt">
+                                <rect key="frame" x="514" y="28" width="66" height="30"/>
+                                <state key="normal" title="Top Right"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLy-NS-5gU">
+                                <rect key="frame" x="20" y="562" width="81" height="30"/>
+                                <state key="normal" title="Bottom Left"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1J1-CH-UPI">
+                                <rect key="frame" x="494" y="562" width="86" height="30"/>
+                                <state key="normal" title="Button Right"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uD6-y3-ExO">
+                                <rect key="frame" x="20" y="66" width="560" height="29"/>
+                                <segments>
+                                    <segment title="NewFeeds"/>
+                                    <segment title="UpcomingEvents"/>
+                                    <segment title="Online Trand"/>
+                                    <segment title="World List"/>
+                                    <segment title="Top Charts"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyi-ie-2rn">
+                                <rect key="frame" x="20" y="102" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Intresting Title goes here?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWb-78-vZ6">
+                                <rect key="frame" x="66" y="102" width="514" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="veU-Rs-kM8">
+                                <rect key="frame" x="20" y="131" width="560" height="423"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qVD-q7-9mt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="1UX-np-f3N"/>
+                            <constraint firstItem="aLy-NS-5gU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="7q8-Te-jd5"/>
+                            <constraint firstItem="uD6-y3-ExO" firstAttribute="leading" secondItem="h2h-cL-wXi" secondAttribute="leading" id="CZ3-LP-13Z"/>
+                            <constraint firstItem="aLy-NS-5gU" firstAttribute="top" secondItem="veU-Rs-kM8" secondAttribute="bottom" constant="8" symbolic="YES" id="H4f-zc-eMt"/>
+                            <constraint firstItem="veU-Rs-kM8" firstAttribute="top" secondItem="Lyi-ie-2rn" secondAttribute="bottom" constant="8" symbolic="YES" id="PV4-os-AIB"/>
+                            <constraint firstItem="Lyi-ie-2rn" firstAttribute="leading" secondItem="uD6-y3-ExO" secondAttribute="leading" id="QBe-Le-5mw"/>
+                            <constraint firstItem="uD6-y3-ExO" firstAttribute="trailing" secondItem="qVD-q7-9mt" secondAttribute="trailing" id="R5I-Wa-Pe1"/>
+                            <constraint firstItem="h2h-cL-wXi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Rmn-mQ-plB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aLy-NS-5gU" secondAttribute="bottom" constant="8" symbolic="YES" id="WO6-P0-zUl"/>
+                            <constraint firstItem="mWb-78-vZ6" firstAttribute="centerY" secondItem="Lyi-ie-2rn" secondAttribute="centerY" id="Yxb-wT-jSt"/>
+                            <constraint firstAttribute="trailing" secondItem="veU-Rs-kM8" secondAttribute="trailing" constant="20" symbolic="YES" id="aG2-TF-28K"/>
+                            <constraint firstItem="mWb-78-vZ6" firstAttribute="leading" secondItem="Lyi-ie-2rn" secondAttribute="trailing" constant="8" symbolic="YES" id="dEQ-K4-ond"/>
+                            <constraint firstItem="h2h-cL-wXi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="k0C-GB-ziW"/>
+                            <constraint firstAttribute="trailing" secondItem="qVD-q7-9mt" secondAttribute="trailing" constant="20" symbolic="YES" id="kqE-9Q-C3W"/>
+                            <constraint firstAttribute="trailing" secondItem="mWb-78-vZ6" secondAttribute="trailing" constant="20" symbolic="YES" id="kuO-tm-wA7"/>
+                            <constraint firstItem="uD6-y3-ExO" firstAttribute="top" secondItem="h2h-cL-wXi" secondAttribute="bottom" constant="8" symbolic="YES" id="pm4-Vz-lVs"/>
+                            <constraint firstAttribute="trailing" secondItem="1J1-CH-UPI" secondAttribute="trailing" constant="20" symbolic="YES" id="qsU-BH-4Ml"/>
+                            <constraint firstItem="veU-Rs-kM8" firstAttribute="leading" secondItem="Lyi-ie-2rn" secondAttribute="leading" id="srt-JS-fYo"/>
+                            <constraint firstItem="Lyi-ie-2rn" firstAttribute="top" secondItem="uD6-y3-ExO" secondAttribute="bottom" constant="8" symbolic="YES" id="zc1-LJ-8Lz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1J1-CH-UPI" secondAttribute="bottom" constant="8" symbolic="YES" id="zgJ-mq-bBo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="452" y="419"/>
         </scene>
     </scenes>
 </document>
